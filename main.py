@@ -89,15 +89,15 @@ for i in tqdm(range(iterations)):
 	accuracy.append(calc_accuracy(cache))
 	l2_cost.append((1/np.sum(np.exp(cache["A3"] - Y)))*m)
 
-fig, ax1 = plt.subplots()
-#ax1.plot(l1_cost, label="l1", color="red")
-ax1.plot(l2_cost, label="l2 loss", color="blue")
+	fig, ax1 = plt.subplots()
+	#ax1.plot(l1_cost, label="l1", color="red")
+	ax1.plot(l2_cost, label="l2 loss", color="blue")
 
-plt.legend()
+	plt.legend()
 
-ax2 = ax1.twinx()
-ax2.plot(accuracy, label="accuracy", color="green")
+	ax2 = ax1.twinx()
+	ax2.plot(accuracy, label="accuracy", color="green")
 
-
-plt.legend()
+	plt.legend()
+	plt.pause(0.000001)
 plt.show()
