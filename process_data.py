@@ -9,7 +9,7 @@ from tqdm import tqdm
 
 def fetch_processed_data():
 	#using https://www.kaggle.com/c/dogs-vs-cats
-	#unzip the zip files!
+	#download and put the train and test1 folders in your main folder!
 	train_dir = os.path.join(os.getcwd(), "train")
 	test_dir = os.path.join(os.getcwd(), "test1")
 	img_size = 35
@@ -22,6 +22,7 @@ def fetch_processed_data():
 	processed_testing_examples = []
 	processed_testing_labels = []
 
+	random.shuffle(training_examples)
 
 	#num_of_examples = 2000
 	num_of_examples = len(training_examples)

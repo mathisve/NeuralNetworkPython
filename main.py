@@ -6,6 +6,7 @@ import numpy as np
 from tqdm import tqdm
 
 #using https://www.kaggle.com/c/dogs-vs-cats
+#download and put the train and test1 folders in your main folder!
 train, test = process_data.fetch_processed_data() #returns train {"X", "Y"} and test {"X", "Y"}
 
 X, Y = train["X"], train["Y"]
