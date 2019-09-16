@@ -24,7 +24,7 @@ def fetch_processed_data():
 
 	random.shuffle(training_examples)
 
-	num_of_examples = 15000
+	num_of_examples = 5000
 	#num_of_examples = len(training_examples)
 
 
